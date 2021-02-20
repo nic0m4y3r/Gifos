@@ -47,6 +47,16 @@ main {
         width: 273px;
       }
     }
+
+    .divider {
+      width: 157px;
+      height: 1px;
+      margin: 0 auto;
+      background-color: #9cafc3;
+      opacity: 0.5;
+      margin: 0 auto;
+      margin-top: 35px;
+    }
   }
 
   /*Formulario del Search*/
@@ -88,11 +98,73 @@ main {
       background-image: url(/assets/images/icon-search.svg);
       width: 24px;
       height: 24px;
-      border:none;
+      border: none;
       background-color: transparent;
       background-repeat: no-repeat;
-     margin-left:-5px; /*Muevo la lupa*/
+      margin-left: -5px; /*Muevo la lupa*/
       cursor: pointer;
     }
   }
+
+  /*Aca le doy formato al treding*/
+
+  .trending_Text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 236px;
+
+    /*Le doy forma al titulo*/
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #572ee5;
+      text-align: center;
+      line-height: 25px;
+    }
+    /*Le doy forma al parrafo*/
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      color: #572ee5;
+      text-align: center;
+      line-height: 25px;
+    }
+  }
 }
+
+.container_trending_gifos {
+  background-color: #f3f5f8;
+
+  padding: 44px 22px 82px 22px;
+
+  h2 {
+    font-weight: 700;
+    font-size: 25px;
+    color: #572ee5;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .trending_Paragraph {
+    margin-bottom: 32px;
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      color: #000000;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      line-height: 21px;
+    }
+  }
+
+  /*Aca me traigo el gifo*/
+  .trae_Gifos {
+    width: 243px;
+    height: 187px;
+    background-color: #50e3c2;
+  }
+  
+}
+
+
