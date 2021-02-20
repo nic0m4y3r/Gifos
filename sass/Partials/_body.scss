@@ -1,10 +1,98 @@
 * {
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-     }
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+main {
+  margin-top: 102px;
+}
+
+/*Le doy forma a mi container*/
+.container_Search_Total {
+  padding: 10px 21px 5px 21px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+
+  /*Le doy forma a mi titulo dentro de mi container*/
+  h1 {
+    padding: 0px 20px 0px 20px;
+    color: #572ee5;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 31px;
+  }
+  .span_Titulo_Gifos {
+    color: #50e3c2;
+  }
+
+  /*Pongo en columnas la imagen y textbox*/
+  .container_Search_Gifos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /*Aca le doy las propiedades a la imagen */
+    .search_Images {
+      max-height: 132px;
+      img {
+        width: 273px;
+      }
+    }
+  }
+
+  /*Formulario del Search*/
+  .search_Form {
+    width: 100%;
+    max-height: 200px;
+    border: 1px solid #572ee5;
+    border-radius: 27px;
+    padding: 15px 20px 15px 55px;
+    margin-bottom: 31px;
+  }
+
+  /*Aca le doy formato a mi textbox de search*/
+  .textbox_Search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    input {
+      border: none;
+      color: #000;
+      width: 100%;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      background: transparent;
+
+      &::placeholder {
+        color: #6b7989;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+
+    /*Aca le doy formato a mi boton de search*/
+    #search_Btn {
+      background-image: url(/assets/images/icon-search.svg);
+      width: 24px;
+      height: 24px;
+      border:none;
+      background-color: transparent;
+      background-repeat: no-repeat;
+     margin-left:-5px; /*Muevo la lupa*/
+      cursor: pointer;
+    }
+  }
+}

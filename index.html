@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="./css/Style.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;900&display=swap" rel="stylesheet" />
-        <title>Gifos-acamica</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;900&display=swap"
+        rel="stylesheet" />
+    <title>Gifos-acamica</title>
 </head>
 
 <body>
@@ -26,63 +28,66 @@
             </div>
         </nav>
     </header>
-        <!--Sección search-->
-        <section class="container_Search_Total">
-            <h1>Inspírate, busca, guarda, y crea los mejores <span>GIFOS</span></h1>
-            <div class="container_Search_Gifos">
 
-                <div class="search_Images">
-                    <img src="./assets/images/ilustra_header.svg">
-                </div>
-                <div class="search_Form">
-                    <form>
-                        <input type="text" name="search_Input" id="search_Input" placeholder="Busca GIFOS y más">
-                        <button type="submit" id="search_Btn">Reemplazar por lupa</button>
-                    </form>
-                    <!-- RESULTADO DE LA BUSQUEDA-->
-                    <div class="trending_Text">
-                        <h2>Trending:</h2>
-                        <p>Rections, Entertainment, Sports, Stickers, Artists</p>
-                    </div>
-                </div>
-        </section>
+    <!--Sección search-->
+    <section class="container_Search_Total">
+        <h1>Inspírate, busca, guarda, y crea los mejores <span class="span_Titulo_Gifos">GIFOS</span></h1>
+        <div class="container_Search_Gifos">
 
-        <div class="divider">
+            <div class="search_Images">
+                <img src="./assets/images/ilustra_header.svg">
+            </div>
+            
+            <div class="search_Form">
+                <form class="textbox_Search">
+                    <input type="text" name="search_Input" id="search_Input" placeholder="Busca GIFOS y más">
+                    <button type="submit" id="search_Btn"></button>
+                </form>
+            
+                <!-- RESULTADO DE LA BUSQUEDA-->
+                <div class="trending_Text">
+                    <h2>Trending:</h2>
+                    <p>Rections, Entertainment, Sports, Stickers, Artists</p>
+                </div>
+            </div>
+    </section>
+
+    <div class="divider">
+    </div>
+
+    <!--Sección GIFOS-->
+    <section class="container_trending_gifos">
+        <h2>Trending GIFOS</h2>
+        <div>
+            <p>Mira los últimos</p>
+            <p>GIFOS de nuestra comunidad.</p>
         </div>
 
-        <!--Sección GIFOS-->
-        <section class="container_trending_gifos">
-            <h2>Trending GIFOS</h2>
-            <div>
-                <p>Mira los últimos</p>
-                <p>GIFOS de nuestra comunidad.</p>
-            </div>
+        <div class="trae_Gifos">
+            <!--aca tengo q mostrar los gifos de la api-->
+        </div>
+    </section>
 
-            <div class="trae_Gifos">
-                <!--aca tengo q mostrar los gifos de la api-->
+    <footer>
+        <div class="social_Media">
+            <h4>Compartir en:</h4>
+            <div class="social_Media_Icons">
+                <a href="https://facebook.com" target="_blank" rel="noreferrer">
+                    <span class="icon_Facebook"></span>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noreferrer">
+                    <span class="icon_Twitter"></span>
+                </a>
+                <a href="https://icon_instagram.com" target="_blank" rel="noreferrer">
+                    <span class="icon_Instagram"></span>
+                </a>
             </div>
-        </section>
+        </div>
+        <div class="legal">
+            <p>© GIFOS 2020 All Rights Reserved.</p>
+        </div>
+    </footer>
 
-        <footer>
-            <div class="social_Media">
-                <h4>Compartir en:</h4>
-                <div class="social_Media_Icons">
-                    <a href="https://facebook.com" target="_blank" rel="noreferrer">
-                        <span class="icon_Facebook"></span>
-                    </a>
-                    <a href="https://twitter.com" target="_blank" rel="noreferrer">
-                        <span class="icon_Twitter"></span>
-                    </a>
-                    <a href="https://icon_instagram.com" target="_blank" rel="noreferrer">
-                        <span class="icon_Instagram"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="legal">
-                <p>© GIFOS 2020 All Rights Reserved.</p>
-            </div>
-        </footer>
-    
 </body>
 
 </html>
