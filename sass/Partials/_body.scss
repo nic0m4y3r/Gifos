@@ -157,14 +157,26 @@ main {
       line-height: 21px;
     }
   }
-
-  /*Aca me traigo el gifo*/
-  .trae_Gifos {
-    width: 243px;
-    height: 187px;
-    background-color: #50e3c2;
-  }
-  
 }
 
+//Estilizo los gifos de trending
 
+.card_trending {
+  //MI DIV HTML
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;      
+  .card {
+    // MI DIV JS
+    display: flex;
+    width: 243px;
+    height: 187px;
+    object-fit: cover;
+    margin-left: 15px;
+    img {
+      width: 243px;
+      height: 187px;
+    }
+  }
+}
