@@ -133,10 +133,22 @@ main {
   }
 }
 
-.container_trending_gifos {
-  background-color: #f3f5f8;
+//Titulo_My_Gifos/////
+.tittle_my_gyfos{
+ .icon{
+  text-align: center;
+ }
+  h2{
+    font-weight: 700;
+    font-size: 25px;
+    color: #572ee5;
+    text-align: center;
+    line-height: 30px;
+  }
+}
 
-  padding: 44px 22px 82px 22px;
+.container_trending_gifos {
+ 
 
   h2 {
     font-weight: 700;

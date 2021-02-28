@@ -21,16 +21,3 @@ fetch(`${api_trending}${api_key}&q&limit=3`)
       cointainer_trending.appendChild(card);
     });
   });
-
-
-/////////////////SEARCH///////////////////////
-let search = document.getElementById("search_Input");
-let btn_search = document.getElementById("search_Btn");
-const limit = 12;
-
-btn_search.addEventListener("click", (event) => {
-  event.preventDefault();
-  console.log(search.value);
-  search_Gifo(search.value);
-  
-});
