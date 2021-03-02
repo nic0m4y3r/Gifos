@@ -1,8 +1,9 @@
 /*Aca uso la api trending*/
 //Le pego a la api para que me traiga 3 gifts y los muestro en el html, con el ciclo for recorro mi array
 const api_search=
-  "https://api.giphy.com/v1/gifs/search?api_key=KlYSpi7VIayBHNm15pc4EAjGknZTtmO0&q=";
+"https://api.giphy.com/v1/gifs/search?api_key=KlYSpi7VIayBHNm15pc4EAjGknZTtmO0&limit=12&q=";
 const api_trending = "http://api.giphy.com/v1/gifs/trending?api_key=";
+const api_segerencias= ""
 const api_key = "dvMF6ZEGC3KYgwMSAhpCKNiFt8nyxwwG";
 
 
@@ -31,6 +32,5 @@ const limit = 12;
 btn_search.addEventListener("click", (event) => {
   event.preventDefault();
   console.log(search.value);
-  search_Gifo(search.value);
-  
-});
+ search_Gifo(search.value);
+    });

@@ -57,6 +57,27 @@ main {
       margin: 0 auto;
       margin-top: 35px;
     }
+
+    .searcher_Return {
+      display: flex;
+
+      .searcherGalleryResults {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .card {
+          width: 156px;
+          height: 120px;
+          object-fit: cover;
+          margin-bottom: 10px;
+
+          img {
+            width: 156px;
+            height: 120px;
+          }
+        }
+      }
+    }
   }
 
   /*Formulario del Search*/
@@ -134,11 +155,11 @@ main {
 }
 
 //Titulo_My_Gifos/////
-.tittle_my_gyfos{
- .icon{
-  text-align: center;
- }
-  h2{
+.tittle_my_gyfos {
+  .icon {
+    text-align: center;
+  }
+  h2 {
     font-weight: 700;
     font-size: 25px;
     color: #572ee5;
@@ -148,8 +169,6 @@ main {
 }
 
 .container_trending_gifos {
- 
-
   h2 {
     font-weight: 700;
     font-size: 25px;
@@ -178,7 +197,7 @@ main {
   display: flex;
   justify-content: flex-start;
   overflow-x: scroll;
-  scroll-snap-type: x mandatory;      
+  scroll-snap-type: x mandatory;
   .card {
     // MI DIV JS
     display: flex;
