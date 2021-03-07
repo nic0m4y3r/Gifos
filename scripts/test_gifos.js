@@ -32,7 +32,7 @@ const limit = 12;
 
 
 //let isSearching = false;
-
+/*
 btn_search.addEventListener("click", (event) => {
   event.preventDefault();
   let text = search.value;
@@ -79,7 +79,6 @@ ul.src=obj_json.name;
 card.appendChild(ul) //HASTA ACA LLEGA BIEN EL DATO
 container.appendChild(card);
 }
-
 
 
 

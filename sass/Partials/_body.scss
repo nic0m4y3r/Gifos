@@ -40,6 +40,14 @@ main {
     align-items: center;
     flex-direction: column;
 
+    //Le saco los bullet a mis suegerencias dentro del textbox de search
+.sin_bullet{
+list-style: none;
+
+.btn_suggestion{
+  background-attachment: red;
+}
+}
     /*Aca le doy las propiedades a la imagen */
     .search_Images {
       max-height: 132px;
