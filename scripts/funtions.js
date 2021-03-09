@@ -34,20 +34,17 @@ async function sugerencia(term) {
   draw_search(respuesta);
 }
 
+//DIBUJO LA SUGERENCIA
 function draw_search(term) {
   let suggestList = document.getElementById("text-suggestion");
   suggestList.innerHTML = "";
   let array = term.data;
+ // document.getElementById("search_Form").className += "text_box_increase";
   array.forEach((element) => {
-    let item = document.createElement("li");
+   let item = document.createElement("li");
     item.className += "sin_bullet";
     item.innerHTML = element.name;
     item.setAttribute("onclick", "select_list(this)");
-
-    //let btn = document.createElement("Button");
-    //btn.innerText = element.name;
-    //btn.className += "btn_suggestion"; //creo la clase para estilizarlo
-    //item.appendChild(btn);
     suggestList.appendChild(item);
   });
 }
@@ -59,6 +56,7 @@ function select_list(event) {
   if (resultado) {
     //Aca le pego a la api de search
     search_Gifo(resultado);
+    document.getElementById("search_Input").value = resultado;
   }
 }
 
@@ -71,9 +69,3 @@ async function sugerencia(term) {
   let respuesta = await dt.json();
   draw_search(respuesta);
 }
-
-/*
-let mi_lista = document.getElementById("text-suggestion");
-mi_lista.addEventListener("click",(event)=>{
- console.log("PEPE",event);
-});*/

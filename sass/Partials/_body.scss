@@ -40,14 +40,20 @@ main {
     align-items: center;
     flex-direction: column;
 
+    .text-suggestion {
+      //aca estilizo mi UL
+      padding-right: 850px;
+    }
     //Le saco los bullet a mis suegerencias dentro del textbox de search
-.sin_bullet{
-list-style: none;
+    .sin_bullet {
+      padding-left: 5px;
+      list-style-image: url(/assets/images/icon-search-mod-noc.svg);
+      background-repeat: no-repeat;
 
-.btn_suggestion{
-  background-attachment: red;
-}
-}
+      .btn_suggestion {
+        background-attachment: red;
+      }
+    }
     /*Aca le doy las propiedades a la imagen */
     .search_Images {
       max-height: 132px;
@@ -97,6 +103,14 @@ list-style: none;
     padding: 15px 20px 15px 55px;
     margin-bottom: 31px;
   }
+  //.text_box_increase {
+    //width: 100%;
+    //max-height: 200px;
+    //border: 1px solid black;
+    //border-radius: 27px;
+    //padding: 15px 20px 15px 55px;
+    //margin-bottom: 31px;
+ // }
 
   /*Aca le doy formato a mi textbox de search*/
   .textbox_Search {
